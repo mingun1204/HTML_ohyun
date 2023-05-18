@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        .block{
+            box-sizing: border-box;
+            background-color: lightblue;
+            border: 1px solid blue;
+            /* border: 1px dotted red; */
+            width: 100px;
+            height: 100px;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 10px;
+            color: red;
+
+        }
+
+        .inline{
+            background-color: yellowgreen;
+            /* 인라인 너비,높이 변환 안됨 */
+            /* width: 2000px; */
+            /* 인라인 margin 상하 불가능 */
+            /* margin-top: 100px; */
+            /* 패딩은 가능 */
+            border-radius: 10px;
+            padding: 10px 50px;
+            color:white;
+            border: 10px solid;
+            border-color:black
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <!-- block 레벨 요소 -->
+    <div class="block">Box</div>
+    <div class="block">Box</div>
+
+
+    <!-- inline 요소 -->
+    <a class="inline" href="">a 태그</a>
+    <span class="inline">span 태그</span>
+</body>
+</html>
