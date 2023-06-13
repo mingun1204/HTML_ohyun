@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'memo',
 ]
 
 MIDDLEWARE = [
@@ -127,3 +128,7 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_TRUSTED_ORIGINS = ["https://mingun1204-humble-rotary-phone-ggpqv4rwxwp397v9-8000.preview.app.github.dev/"]
+
+# CSRF_TRUSTED_ORIGINS = ["https://heyoni-shiny-eureka-6wjx54wgxgrc577x-8000.preview.app.github.dev"]
