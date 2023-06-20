@@ -17,21 +17,21 @@
     <div class="wrap">
       <header>
         <button type="button" class="new-btn">새 메모</button>
-        <a href="./index.html" class="exit-btn">나가기</a>
-
+        <a href="{% url 'main'%}" class="exit-btn">나가기</a>
       </header>
-        <div>
-            <form class="upload-form" method="POST" action="{% url 'memo_create' %}">
-              {% csrf_token %}
-              <div class="upload-btn-wrap">
-                <button type="submit" class="upload-btn">메모 저장</button>
-                <button type="button" class="close-btn">X</button>
-              </div>
-              <div class="input-wrap">
-                <input type="text" id="title" name="title" placeholder="제목을 입력해주세요" />
-                <textarea id="contents" name="content" placeholder="내용을 입력해주세요"></textarea>
-              </div>
-            </form>
+      <div>
+      <!-- templates/memo_create.html -->
+        <form class="upload-form" method="POST" action="{% url 'memo_create' %}">
+            {% csrf_token %}
+          <div class="upload-btn-wrap">
+            <button type="submit" class="upload-btn">메모 저장</button>
+            <button type="button" class="close-btn"><a href="{% url 'memo_list' %}"><a href ={% url 'memo_list' %} >X</a></button>
+        </div>
+    <div class="input-wrap">
+      <input type="text" id="title" name="title" placeholder="제목을 입력해주세요" />
+      <textarea id="contents" name="content" placeholder="내용을 입력해주세요"></textarea>
+    </div>
+</form>
         </div>
     </div>
   </body>
